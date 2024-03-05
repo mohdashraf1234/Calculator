@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('./calculator.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+    position:relative;
+    right:15%;
+    bottom:8%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.calculator {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+button {
+    padding: 15px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    transition: background-color 0.3s;
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: slideIn 1s ease-in-out forwards;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
